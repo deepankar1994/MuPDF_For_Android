@@ -1,25 +1,17 @@
-AndroidPdfViewer
-================
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-AndroidPdfViewer-brightgreen.svg?style=flat)](https://android-arsenal.com/details/3/1124)
+Edited by Deepankar Arya
 
+PDF Reader for Android based on MuPDF
 
-Simple and Smooth Pdfviewer for Android applications.
-This project use copy of mupdf as library module.
+Instructions
 
-USAGE
+1)Import project into Android Studio
+2)Build using Gradle
+3)In the 'com.tekinarslan.sample' application goto the class 'SampleActivity'.  You can choose which PDF to open in the function 'openPdfWithFragment()'.
 
-*Import project into Android Studio.
-
-*Project has two modules
-
-  -Mupdflibrary
-  -Sample
-
-*Sample application using fragmentation with actionbar.  
 
 *Run Sample on device.
 
-![alt tag](http://www.stdroid.com/img/screenshot.png)
+![alt tag](https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xft1/v/t34.0-12/11694258_497602313730671_1506144437_n.jpg?oh=395b54558af51883ae0035287afdebf8&oe=55936D47&__gda__=1435794807_174e0d1b2bb903f8a32856576f1acba1)
 
 LIBRARY LICENSE
 
