@@ -1,7 +1,81 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<ViewAnimator
+    android:id="@+id/switcher"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true">
+
+    <RelativeLayout
+        android:id="@+id/topBar0Main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar">
+
+        <TextView
+            android:id="@+id/docNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/linkButton"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="16dp"
+            android:singleLine="true"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageButton
+            android:id="@+id/moreButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/more"
+            android:background="@drawable/button"
+            android:src="@drawable/ic_more" />
+
+    </RelativeLayout>
+
+</ViewAnimator>
+
+<RelativeLayout
     android:id="@+id/pdflayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="5dp">
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true">
+
+    <SeekBar
+        android:id="@+id/pageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="0dp"
+        android:thumb="@drawable/seek_thumb"
+        android:progressDrawable="@drawable/seek_progress"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="8dp"
+        android:background="@color/toolbar" />
+
+    <TextView
+        android:id="@+id/pageNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pageSlider"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/page_num"
+        android:textColor="#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>
+
+</RelativeLayout>
+
