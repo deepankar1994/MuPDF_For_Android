@@ -415,6 +415,7 @@ public class MuPDFActivity extends Activity {
                 }
             }
         };
+
         mDocView.setAdapter(new MuPDFPageAdapter(this, core));
 
         mSearchTask = new SearchTask(this, core) {

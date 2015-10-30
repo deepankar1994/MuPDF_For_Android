@@ -17,7 +17,7 @@ import java.io.File;
  */
 public class SampleActivity extends Activity {
     private static final String TAG = "SampleActivity";
-    private static final String SAMPLE_FILE = "sample.pdf";
+    private static final String SAMPLE_FILE = "/storage/sdcard1/epub/arkinka.pdf";
     private static final String FILE_PATH = "filepath";
     private static final String SEARCH_TEXT = "text";
     private PdfFragment fragment;
@@ -60,7 +60,7 @@ public class SampleActivity extends Activity {
     public void openPdfWithFragment() {
         fragment = new PdfFragment();
         Bundle args = new Bundle();
-        args.putString(FILE_PATH, Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + SAMPLE_FILE);
+        args.putString(FILE_PATH, /*Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + */ SAMPLE_FILE);
         fragment.setArguments(args);
         FragmentManager fragmentManager = getFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
