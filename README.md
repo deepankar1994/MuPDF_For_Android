@@ -9,10 +9,6 @@ Instructions
 3)In the 'com.tekinarslan.sample' application goto the class 'SampleActivity'.  You can choose which PDF to open in the function 'openPdfWithFragment()'.
 
 
-*Run Sample on device.
-
-![alt tag](https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xft1/v/t34.0-12/11694258_497602313730671_1506144437_n.jpg?oh=395b54558af51883ae0035287afdebf8&oe=55936D47&__gda__=1435794807_174e0d1b2bb903f8a32856576f1acba1)
-
 LIBRARY LICENSE
 
 MuPDF is Copyright 2006-2014 Artifex Software, Inc.
